@@ -1,11 +1,15 @@
 //your JS code here. If required.
-const counterpara = document.getElementById('counter');
-		const incrementbtn = document.getElementById('incrementBtn');
+ const counterParagraph = document.getElementById('counter');
+    const incrementButton = document.getElementById('incrementBtn');
 
-		incrementbtn.AddEventListener('click' , function(){
-         const cnt = parseInt(counterpara.textContent);
+    
+    incrementButton.addEventListener('click', function() {
+      
+      const currentValue = parseInt(counterParagraph.textContent);
 
-			alert("Current value: " + cnt);
+      
+      alert("Current (un-incremented) value: " + currentValue);
 
-			counterpara.textContent = cnt + 1;
-		})
+      
+      counterParagraph.textContent = currentValue + 1;
+    });
